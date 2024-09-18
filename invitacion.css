@@ -5,7 +5,17 @@
 }
 body{
     background-color: rgb(27, 27, 27);
+    width: 100vw;
+    overflow-x: hidden;
+    background: linear-gradient(#202020, #272727);
 }
+html{
+    width: 100vw;
+    overflow-x: hidden;
+}
+/* html{
+    height: 100%;
+} */
 
 .carrusel {
     position: relative;
@@ -28,12 +38,58 @@ body{
 }
 .carrusel-button{
     height: 20px;
-    width: 100%;
-    background-color: rgb(18, 18, 18);
+    width: 100vw;
+    /* background-color: rgb(18, 18, 18); */
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.statics1{
+    position: relative;
+    width: 100vw; /* Ancho del contenedor */
+    height: 120px; /* Alto del contenedor */
+}
 
+.rosas{
+    margin-left: -60px;
+    display: flex;
+    flex-direction: column;
+}
+.flor1,.flor2,.flor3,.flor4{
+    position: absolute;
+    opacity: 0.8;  
+}
+.flor1{
+    width: 180px;
+    height: 149px;
+    z-index: 1;
+    top: -50px;
+    left: -45px;
+}
+.flor3{
+    width: 90px;
+    height: 79px;
+    z-index: 3;
+    top: 45px;
+    left: 35px;
+}
+.flor4{
+    width: 108px;
+    height: 90px;
+    z-index: 2;
+    top: 70px;
+    left: -35px;
+
+}
+
+.flor2{
+    width: 150px;
+    height: 223px;
+    z-index: 1;
+    transform: rotate(-118deg);
+    margin-right: -40px;
+    top: -120px;
+    right: -40px;
 }
 
 .bi-circle-fill{
@@ -42,151 +98,146 @@ body{
     font-size: 8px;
 }
 .bi-circle-fill:hover{
-    color: #d9d9d9ca !important;
+    color: #D90F0Fca !important;
 }
 #c2{
     /* background-color: #D9D9D9 !important; */
-    color: #d9d9d9ca ;
+    color: #D90F0F ;
 }
 #c1, #c3{
     color: #d9d9d937;
 }
-.flores{
-    display: flex;
-    flex-direction: column; /* Coloca las imágenes en una columna */
-    height: 50%;
+.texto1,.texto2{
+    font-family: 'Marck Script';
+    font-size: 56px;
+    letter-spacing: -2px;
 }
 
-.flores1{
-    width: 120px;
-    height: 100px;
-}
-.flores2{
-    width: 95px;
-    height: 80px;
-    /* margin-top: 5px; Ajusta este valor según el espacio deseado entre las imágenes */
-    margin-left: 50px;
-}
-.invitacion{
-    display: flex;
-}
-.invi{
-    width: 100%;
-}
-
-.h1{
-    font-size: 46px;
-}
-.lugar{
-    display: flex;
-    justify-content: space-between;
-    margin-top: 20px;
-}
-.lugarmaps{
-    width: 100%;
-    height: 100%;
-}
-.imagenlugar{
-    position: relative;
-    width: 130px;
-    height: 150px;
-    /* height: 150px;
-    width: 112px; */
+.texto1{
+    position: absolute;
+    top: 10px;
+    left: 33%;
+    
     
 }
-.lugarimg{
+.texto2{
     position: absolute;
-    top: 0;
-    left: 0;
-    right: 20px;
-    height: 150px;
-    width: 112px;
-}
-.img1{
-    z-index: 1;
-    transform: rotate(15deg);
-}
-.img2{
-    transform: rotate(5deg);
-}
-.textolugar{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-}
-.maps{
-    margin-top: 10px;
-    position: absolute;
+    top: 56px;
+    left: 38%;
 }
 
-.division{
-    height: 20px;
-    width: 100%;
-    background-color: rgb(18, 18, 18);
-    margin-top: 50px;
+.tela1{
+    position: absolute;
 }
-.division2{
-    height: 20px;
-    width: 100%;
-    background-color: rgb(18, 18, 18);
-}
-.carta{
+.lugar{
     position: relative;
-    width: 100%; /* Ancho del sobre */
-    height: 200px; /* Alto del sobre */
-    /* border: 2px solid #ccc; 
-    border-radius: 10px;  */
-    overflow: hidden; /* Oculta el contenido que se desborda */
+    width: 100%;
+    height: 275px;
+    font-family: 'Montserrat Alternates';
+    box-shadow: inset 0px -10px 10px rgba(0, 0, 0, 0.5); /* Sombra interna */
 }
-.cartaarriba{
-    /* background-color: rgb(74, 74, 74); */
+
+.tela1{
     position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    width:100%;
-    height: 50%;
-    border-left: 200px solid transparent; /* Ajusta el tamaño del triángulo */
-    border-right: 200px solid transparent;
-    border-top: 100px solid #303030; /* Color del triángulo */
+    top: -100px;
+    right: -110px;
+    z-index: 1;
+    opacity: 0.25;
 }
-.sello{
-    position: absolute;
-    left: 43%;
-    bottom: 81px;
-    width: 50px;
-    height: 38px;
-    opacity: 0.7;
-}
-.forminvitacion{
-    position: absolute; 
-    z-index: 10;
+
+.content1{
     display: flex;
-    flex-direction: column;
+    margin-top: 30px;
+    height: 200px;
+}
+.cont1{
+    flex: 1.2;
+    text-align: center;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cont2{
+    flex: 0.8;
+    display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    height: 100%;
+    position: relative;
+
 }
-.titulo{
-    /* margin-top: px; */
-    margin-bottom: 50px;
+
+.cont1 p,.cont1 h1,.cont1 h4{
+    margin-bottom: 0;
+    line-height: 18px;
 }
-.datos{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.cumpfin{
+    margin-bottom: 10px !important;
 }
-.inputform{
-    margin-bottom: 10px;
+.cont1 h1{
+    font-family: 'Liu Jian Mao Cao';
+    font-size: 46px;
+    margin-top: 5px;
+    margin-bottom: 20px;
 }
-.textinput{
-    background-color: #ffc4c4ce;
-    border-radius: 5px;
+.cont2 img{
+    width: 80px;
+    height: 107px;
 }
-.submitform{
-    background-color: rgb(17, 17, 17);
-    border-radius: 3px;
-    border: none;
-    box-shadow: none;
+.cont2 .img1{
+    position: absolute;    
+    transform: rotate(-98deg);
+    top: 30px;
+    left: 10px;
+}
+.cont2 .img2{
+    position: absolute;
+    z-index: 1;
+    transform:rotate(10deg) ;
+}
+.florlugar{
+    position: absolute;
+    z-index: 3;
+    bottom: 0px;
+    right: 0px;
     width: 100px;
+    height: 109px ;
+}
+
+.pielugar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.ubi{
+    text-align: center;
+    line-height: 6px;
+    font-size: 13px;
+}
+.ubi a{
+    color: rgb(200, 199, 199);
+}
+.sobre{
+    position: relative;
+    width: 100vw;
+    height: 500px;
+}
+.florpie1,.florpie2{
+    position: absolute;
+
+}
+.florpie1{
+    width: 130px;
+    height: 115.5px;
+    z-index: 1;
+    top: -40px;
+    left: -25px;
+}
+.florpie2{
+    width: 150px;
+    height: 223px;
+    transform: rotate(-5deg);
+    left: -40px;
+    top: -10px;
 }
