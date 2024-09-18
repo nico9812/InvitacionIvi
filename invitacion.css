@@ -1,0 +1,192 @@
+*{
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+body{
+    background-color: rgb(27, 27, 27);
+}
+
+.carrusel {
+    position: relative;
+    width: 100%; /* Ajusta según el tamaño de las imágenes */
+    height: 200px; /* Ajusta según el tamaño de las imágenes */
+  }
+  
+.image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; /* Ajusta para que las imágenes tengan el mismo tamaño */
+    height: 100%;
+}
+#image2,#image3{
+    z-index: -1;
+}
+#image1{
+    z-index: 1;
+}
+.carrusel-button{
+    height: 20px;
+    width: 100%;
+    background-color: rgb(18, 18, 18);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.bi-circle-fill{
+    margin-left: 2.5px;
+    margin-right: 2.5px;
+    font-size: 8px;
+}
+.bi-circle-fill:hover{
+    color: #d9d9d9ca !important;
+}
+#c2{
+    /* background-color: #D9D9D9 !important; */
+    color: #d9d9d9ca ;
+}
+#c1, #c3{
+    color: #d9d9d937;
+}
+.flores{
+    display: flex;
+    flex-direction: column; /* Coloca las imágenes en una columna */
+    height: 50%;
+}
+
+.flores1{
+    width: 120px;
+    height: 100px;
+}
+.flores2{
+    width: 95px;
+    height: 80px;
+    /* margin-top: 5px; Ajusta este valor según el espacio deseado entre las imágenes */
+    margin-left: 50px;
+}
+.invitacion{
+    display: flex;
+}
+.invi{
+    width: 100%;
+}
+
+.h1{
+    font-size: 46px;
+}
+.lugar{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.lugarmaps{
+    width: 100%;
+    height: 100%;
+}
+.imagenlugar{
+    position: relative;
+    width: 130px;
+    height: 150px;
+    /* height: 150px;
+    width: 112px; */
+    
+}
+.lugarimg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 20px;
+    height: 150px;
+    width: 112px;
+}
+.img1{
+    z-index: 1;
+    transform: rotate(15deg);
+}
+.img2{
+    transform: rotate(5deg);
+}
+.textolugar{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.maps{
+    margin-top: 10px;
+    position: absolute;
+}
+
+.division{
+    height: 20px;
+    width: 100%;
+    background-color: rgb(18, 18, 18);
+    margin-top: 50px;
+}
+.division2{
+    height: 20px;
+    width: 100%;
+    background-color: rgb(18, 18, 18);
+}
+.carta{
+    position: relative;
+    width: 100%; /* Ancho del sobre */
+    height: 200px; /* Alto del sobre */
+    /* border: 2px solid #ccc; 
+    border-radius: 10px;  */
+    overflow: hidden; /* Oculta el contenido que se desborda */
+}
+.cartaarriba{
+    /* background-color: rgb(74, 74, 74); */
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width:100%;
+    height: 50%;
+    border-left: 200px solid transparent; /* Ajusta el tamaño del triángulo */
+    border-right: 200px solid transparent;
+    border-top: 100px solid #303030; /* Color del triángulo */
+}
+.sello{
+    position: absolute;
+    left: 43%;
+    bottom: 81px;
+    width: 50px;
+    height: 38px;
+    opacity: 0.7;
+}
+.forminvitacion{
+    position: absolute; 
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+.titulo{
+    /* margin-top: px; */
+    margin-bottom: 50px;
+}
+.datos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.inputform{
+    margin-bottom: 10px;
+}
+.textinput{
+    background-color: #ffc4c4ce;
+    border-radius: 5px;
+}
+.submitform{
+    background-color: rgb(17, 17, 17);
+    border-radius: 3px;
+    border: none;
+    box-shadow: none;
+    width: 100px;
+}
