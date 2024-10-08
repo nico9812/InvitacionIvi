@@ -12,6 +12,14 @@
     font-family: 'Liu Jian Mao Cao';
     src: url('fonts/Liu_Jian_Mao_Cao/LiuJianMaoCao-Regular.ttf') format('truetype'); /* O usa .woff si es el formato */
 }
+@font-face {
+    font-family: 'Questrial';
+    src: url('fonts/Questrial/Questrial-Regular.ttf') format('truetype'); /* O usa .woff si es el formato */
+}
+@font-face {
+    font-family: 'Rosarivo';
+    src: url('fonts/Rosarivo/Rosarivo-Regular.ttf') format('truetype'); /* O usa .woff si es el formato */
+}
 
 *{
     margin: 0;
@@ -25,6 +33,7 @@ body{
     overflow-x: hidden;
     background: linear-gradient(#202020, #272727);
     font-family: "Marck Script";
+    height: 100vh;
 }
 html{
     width: 100vw;
@@ -326,7 +335,7 @@ html{
 }
 .selloimg{
     position: absolute;
-    z-index: 1000;
+    z-index: 5;
     width: 20%;
     height: auto;
     margin-left: 5%;
@@ -346,10 +355,9 @@ html{
     margin-left: 10px;
     z-index: 2;
 }
-.telasobre1, .telasobre2, .telasobre3{
+.telasobre1, .telasobre2, .telasobre3, .telasobre4, .flortela1, .flortela2{
     position: absolute;
     top: 0;
-    filter: brightness(0.5);
     z-index: 0;
 }
 .telasobre1{
@@ -357,22 +365,42 @@ html{
     height: auto;
     top: -50px;
     left: -50px;
+    filter: brightness(0.5);
 }
 .telasobre2{
     width: 200px;
     height: auto;
     top: -5px;
     right: 0;
+    filter: brightness(0.5);
 }
 .telasobre3{
-    width: 200px;
+    width: 240px;
     height: auto;
-    top: -100px;
-    right: -30px;
-    transform: rotate(135deg);
-    filter: brightness(0.7);
-    
-
+    top: -150px;
+    right: 0px;
+}
+.telasobre4{
+    width: 300px;
+    height: auto;
+    top: -40px;
+    left: -40px;
+}
+.flortela1{
+    width: 100px;
+    height: auto;
+    transform: rotate(-60deg);
+    top: -60px;
+    right: -40px;
+    z-index: 1;
+}
+.flortela2{
+    width: 180px;
+    height: auto;
+    transform: rotate(-100deg);
+    top: -140px;
+    right: -170px;
+    z-index: 1;
 }
 
 .piefotos .img1{
@@ -405,6 +433,17 @@ html{
     flex-direction: column;
     
 }
+.fotos1{
+    display: relative;
+}
+.florfotopie{
+    position: absolute;
+    width: 80px;
+    height: auto;
+    bottom: 0;
+    left: 80px;
+    z-index: 2;
+}
 .fotos2{
     margin-left: -50px;
 }
@@ -424,5 +463,90 @@ html{
     line-height: 30px;
     margin-top: 20px;
     margin-right: 40px;
+}
+.footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #191919;
+}
+.footer hr{
+    width: 80%;
+}
+.footer h2{
+    font-family: Questrial;
+    font-size: 14px;
+    opacity: 0.6;
+    margin-top: -8px;
+    margin-bottom: 10px;
+}
+.modalform {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 20;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
 
+.modal-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #191919;
+    opacity: 0.5;
+    z-index: -1; /* Para que el fondo quede detrás del formulario */
+}
+.form{
+    background-color: #D9D9D9;
+    
+}
+.contenedor{
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    color: black;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.contenedor *{
+    color: black;
+}
+.contenedor h1{
+    text-decoration: underline;
+}
+.contenedor label{
+    font-family: Rosarivo;
+    width: 100%;
+}
+.contenedor label input{
+    background-color: transparent; /* Fondo transparente */
+    border: none; /* Sin borde */
+    border-bottom: 0.5px solid black; /* Línea inferior visible */
+    color: black; /* Color del texto */
+    padding: 5px;
+    height: 16px;
+    width: auto;
+}
+.contenedor span{
+    font-family: Rosarivo;
+    font-size: 13px;
+    margin-top: 10px;
+}
+.contenedor input{
+    width: 40%;
+    border-bottom: 0.3px solid black !important;
+    background: none;
+    margin-top: 10px;
+
+}
+.selloimg:hover{
+    cursor: pointer;
 }

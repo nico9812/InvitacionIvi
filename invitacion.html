@@ -10,6 +10,29 @@
     <title>Estas invitado</title>
 </head>
 <body>
+    <div class="modalform" id="modalinvitacion">
+        <div class="modal-background" onclick="cerrarmodal()"></div> <!-- Fondo separado -->
+        <div class="form">
+            <form class="contenedor" id="form">
+                <h1>Confirmá tu asistencia</h1>
+                <label for="nombre">
+                    Nombre y Apellido: <input type="text" name="nombre" id="nombre">
+                </label>
+                <span id="spanerror">Error al enviar</span>
+                <span>Recuerda debes llevar tu propia comida</span>
+                <input type="submit" value="Enviar">
+            </form>
+        </div>
+    </div>
+
+    <div class="modalform" id="modalok">
+        <div class="modal-background" onclick="cerrarmodalok()"></div> <!-- Fondo separado -->
+        <div class="form">
+            <div class="contenedor" >
+                <h2>Datos enviados</h2>
+            </div>
+        </div>
+    </div>
     <div>
         <div class="inicio">
             <img src="img/flores3.png" alt="" class="flortop1">
@@ -76,17 +99,20 @@
         <div class="carta">
             <h1>¿Podras asistir?</h1>
             <img src="img/Carta2.png" alt="" class="cartaimg">
-            <img src="img/sello.png" alt="" class="selloimg">
+            <img src="img/sello.png" alt="" class="selloimg" onclick="abrirmodal()">
         </div>        
     </div>
     <div class="piefotos">
-        <!-- <img src="img/telas7.png" class="telasobre3" alt="">
-        <img src="img/telas7.png" class="telasobre4" alt=""> -->
+        <img src="img/telas7.png" class="telasobre3" alt="">
+        <img src="img/telas8.png" class="telasobre4" alt="">
         <img src="img/tela2.png" class="telasobre1" alt="">
         <img src="img/tela5.png" class="telasobre2" alt="">
+        <img src="img/flores1.png" class="flortela1" alt="">
+        <img src="img/flores3.png" class="flortela2" alt="">
         <div class="fotos1">
             <img src="img/foto3.png" alt="" class="img3">
             <img src="img/foto2.png" alt="" class="img2">
+            <img src="img/flores4.png" class="florfotopie" alt="">
         </div>
         <div class="fotocenter">
             <p>
@@ -102,8 +128,10 @@
             <img src="img/foto1.png" alt="" class="img1">
         </div>
     </div>
-
-
+    <div class="footer">
+        <hr>
+        <h2>Desarrollado por lunala</h2>
+    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script src="invitacion.js"></script>    
